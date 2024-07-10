@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Calculator</title>
+    <link rel="icon" type="image/x-icon" href="/Images/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="heading text-center mt-1">
+          <div class="col-lg-6 mx-auto title pt-2 pb-2 rounded rounded-3">
+            <h3>
+              Level 1 | CodSoft Project | <br class="pt-1" />
+              Simple Calculator
+            </h3>
+          </div>
+        </div>
+        <div class="cal">
+          <div class="row">
+            <div
+              class="col-lg-12 col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center"
+            >
+              <div class="">
+                <input type="text" id="displayInput" class="my-3" readonly />
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 cal-1 mx-auto py-2">
+                <div class="text-center">
+                  <button
+                    class="button btn btn-primary mx-1 mt-2 grn1"
+                    onclick="clearBtn()"
+                  >
+                    AC
+                  </button>
+                  <button
+                    class="button btn btn-primary mx-1 mt-2 grn1 del"
+                    onclick="deleteLast()"
+                  >
+                    DEL
+                  </button>
+                  <button
+                    class="button btn btn-primary mx-1 mt-2 grn1"
+                    onclick="displayBtn('%')"
+                  >
+                    %
+                  </button>
+                  <button
+                    class="button btn btn-primary mx-1 mt-2 grn"
+                    onclick="displayBtn('/')"
+                  >
+                    /
+                  </button>
+                </div>
+                <div class="text-center">
+                  <button
+                    class="button btn btn-primary mx-1 mt-2"
+                    onclick="displayBtn('7')"
+                  >
+                    7
+                  </button>
+                  <button
+                    class="button btn btn-primary mx-1 mt-2"
+                    onclick="displayBtn('8')"
+                  >
+                    8
+                  </button>
+                  <button
+                    class="button btn btn-primary mx-1 mt-2"
+                    onclick="displayBtn('9')"
+                  >
+                    9
+                  </button>
+                  <button
+                    class="button btn btn-primary mx-1 mt-2 grn"
+                    onclick="displayBtn('*')"
+                  >
+                    *
+                  </button>
+                </div>
+                <div class="text-center">
+                  <button
+                    class="button btn btn-primary mx-1 mt-2"
+                    onclick="displayBtn('4')"
+                  >
+                    4
+                  </button>
+                  <button
+                    class="button btn btn-primary mx-1 mt-2"
+                    onclick="displayBtn('5')"
+                  >
+                    5
+                  </button>
+                  <button
+                    class="button btn btn-primary mx-1 mt-2"
+                    onclick="displayBtn('6')"
+                  >
+                    6
+                  </button>
+                  <button
+                    class="button btn btn-primary mx-1 mt-2 grn"
+                    onclick="displayBtn('-')"
+                  >
+                    -
+                  </button>
+                </div>
+                <div class="text-center">
+                  <button
+                    class="button btn btn-primary mx-1 mt-2"
+                    onclick="displayBtn('1')"
+                  >
+                    1
+                  </button>
+                  <button
+                    class="button btn btn-primary mx-1 mt-2"
+                    onclick="displayBtn('2')"
+                  >
+                    2
+                  </button>
+                  <button
+                    class="button btn btn-primary mx-1 mt-2"
+                    onclick="displayBtn('3')"
+                  >
+                    3
+                  </button>
+                  <button
+                    class="button btn btn-primary mx-1 mt-2 grn"
+                    onclick="displayBtn('+')"
+                  >
+                    +
+                  </button>
+                </div>
+                <div class="text-center">
+                  <button
+                    class="button btn btn-primary mx-1 mt-2"
+                    onclick="displayBtn('00')"
+                  >
+                    00
+                  </button>
+                  <button
+                    class="button btn btn-primary mx-1 mt-2"
+                    onclick="displayBtn('0')"
+                  >
+                    0
+                  </button>
+                  <button
+                    class="button btn btn-primary mx-1 mt-2"
+                    onclick="displayBtn('.')"
+                  >
+                    .
+                  </button>
+                  <button
+                    class="button btn btn-primary mx-1 mt-2 grn equal"
+                    onclick="calculateResult()"
+                  >
+                    =
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

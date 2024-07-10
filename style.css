@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Cursed Timer ULiL";
+  src: url("/cursed-timer-ulil-font/CursedTimerUlil-Aznm.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/Images/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cursed Timer ULiL";
+}
+
+.grn {
+  background-color: #ff9500;
+}
+
+.grn1 {
+  background-color: #d4d4d2;
+  color: #000;
+}
+
+.title {
+  box-shadow: 13px 13px 31px 19px rgba(0, 0, 0, 0.57);
+}
+
+h3 {
+  color: #333;
+}
+
+.cal {
+  width: 350px !important;
+  border: 2px solid #00246b;
+  border-radius: 10px;
+  background-color: #373A40;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  margin-top: 25px;
+}
+
+.cal-1 {
+  width: 310px !important;
+  border-radius: 10px;
+  background-color: #373A40;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 2rem;
+  border: 2px solid #00246b;
+  border-radius: 5px;
+  text-align: right;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 8px rgba(128, 189, 255, 0.5);
+  outline: none;
+}
+
+.button {
+  width: 60px;
+  height: 60px;
+  font-size: 1.2rem;
+  margin: 5px;
+  border: 2px solid #a1d6e2;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #1995ad;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  transform: translateY(2px);
+}
+
+.del:hover {
+  background-color: #e4003a;
+  border: 1px solid whitesmoke !important ;
+}
+
+.equal:hover {
+  background-color: #9bec00;
+  border: 1px solid whitesmoke !important ;
+}
+
+@media (max-width: 768px) {
+  .button {
+    width: 60px;
+    height: 60px;
+    font-size: 1rem;
+  }
+
+  input {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .button {
+    width: 60px;
+    height: 60px;
+    font-size: 15px;
+  }
+
+  input {
+    font-size: 25px;
+  }
+
+  .w-50 {
+    width: 100% !important;
+  }
+}
